@@ -1,0 +1,163 @@
+@keyframes firstArrow {
+    1 0% {
+        font-size: 3.2rem;
+    }
+
+    60% {
+        font-size: 3.2rem;
+    }
+
+    70% {
+        font-size: 2.4rem;
+    }
+
+    80% {
+        font-size: 3.2rem;
+    }
+
+    90% {
+        font-size: 2.4rem;
+    }
+
+    100% {
+        font-size: 3.2rem;
+    }
+}
+
+@keyframes secondArrow {
+    0% {
+        bottom: -120%;
+    }
+
+    100% {
+        bottom: 120%;
+    }
+}
+
+@keyframes thirdArrow {
+    0% {
+        opacity: 1;
+    }
+
+    20% {
+        opacity: 1;
+    }
+
+    20.1% {
+        opacity: 0;
+    }
+
+    25% {
+        opacity: 0;
+    }
+
+    25.01% {
+        opacity: 1
+    }
+
+    30% {
+        opacity: 1;
+    }
+
+    30.01% {
+        opacity: 0;
+    }
+
+    40% {
+        opacity: 0;
+    }
+
+    80% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fourthArrow {
+    0% {
+        transform: rotate(25deg);
+    }
+
+    100% {
+        transform: rotate(-25deg);
+    }
+}
+
+@keyframes fifthArrow {
+    0% {
+        transform: rotate(0)
+    }
+
+    100% {
+        transform: rotate(360deg)
+    }
+}
+
+@keyframes sixthArrow {
+    0% {
+        transform: translateX(-2px);
+    }
+
+    20% {
+        transform: translateX(2px)
+    }
+
+    40% {
+        transform: translateX(-5px)
+    }
+
+    60% {
+        transform: translateX(5px)
+    }
+
+    80% {
+        transform: translateX(-2px)
+    }
+
+    100% {
+        transform: translateX(2px);
+    }
+}
+
+
+
+/* first font animation */
+section.arrows div.text div.firstArrow i {
+    animation: firstArrow 2s linear infinite;
+}
+
+/* second font styles and animation */
+section.arrows div.text div.secondArrow {
+    position: relative;
+    overflow: hidden;
+}
+
+section.arrows div.text div.secondArrow i {
+    position: absolute;
+    animation: secondArrow 2s linear infinite;
+
+}
+
+/* third font animation */
+section.arrows div.text div.thirdArrow i {
+    animation: thirdArrow 3s linear infinite;
+}
+
+/* fourth font animation */
+section.arrows div.text div.fourthArrow i {
+    animation: fourthArrow 1s linear alternate infinite;
+    transform-origin: 50% 0;
+}
+
+/* fifth font animation */
+section.arrows div.text div.fifthArrow i {
+    animation: fifthArrow 2s steps(8) infinite;
+}
+
+/* sixth font animation */
+section.arrows div.text div.sixthArrow i {
+    animation: sixthArrow 2s linear infinite alternate;
+}

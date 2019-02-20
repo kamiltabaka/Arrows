@@ -1,0 +1,138 @@
+@media (orientation: portrait) and (min-width: 768px) {
+    html {
+        font-size: 18px;
+    }
+
+    section.arrows {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    section.arrows h2 {
+        flex-basis: 100%;
+        margin: 25px 0;
+    }
+
+    section.arrows div.text {
+        flex-basis: 50%;
+    }
+
+    section.arrows div.hover {
+        flex-basis: 100%;
+    }
+
+    section.arrows div.hover button.hoverView {
+        margin: 30px 0;
+    }
+
+    section.arrows div.hover p {
+        padding-bottom: 30px;
+    }
+
+    footer.about {
+        padding: 45px;
+    }
+}
+
+@media (orientation: portrait) and (min-width: 1024px) {
+    html {
+        font-size: 24px;
+    }
+
+    header {
+        padding: 45px;
+    }
+
+    section.arrows div.hover {
+        margin-top: 35px;
+
+    }
+
+    section.arrows div.hover p {
+        padding-bottom: 40px;
+    }
+}
+
+@media (orientation: landscape) {
+    html {
+        font-size: 10px;
+    }
+
+    section.arrows {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 25px;
+    }
+
+    section.arrows h2 {
+        flex-basis: 100%;
+        margin: 15px;
+    }
+
+    section.arrows div.text div.arrow {
+        width: 35vh;
+        height: 35vh;
+    }
+
+    section.arrows div.text {
+        flex-basis: 50%;
+    }
+
+    section.arrows div.hover {
+        flex-basis: 100%;
+    }
+
+    section.arrows div.hover button.hoverView {
+        margin: 30px 0;
+    }
+
+    section.arrows div.hover p {
+        padding-bottom: 30px;
+    }
+}
+
+@media (orientation: landscape) and (min-width: 768px) {
+    html {
+        font-size: 12px;
+    }
+}
+
+@media (orientation: landscape) and (min-width: 1024px) {
+    html {
+        font-size: 18px;
+    }
+
+    header {
+        padding: 55px;
+    }
+
+    section.arrows h2 {
+        margin: 25px 0;
+    }
+
+
+    section.arrows div.hover {
+        margin-top: 35px;
+
+    }
+
+    footer.about {
+        padding: 55px;
+    }
+}
+
+@media (orientation: landscape) and (min-width: 1280px) {
+    div.wrapper {
+        max-width: 1400px;
+        margin: 0 auto;
+    }
+
+    html {
+        font-size: 20px;
+    }
+
+    section.arrows div.hover button.hoverView:hover {
+        letter-spacing: 5px;
+    }
+
+}

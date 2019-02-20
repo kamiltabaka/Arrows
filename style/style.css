@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Comfortaa', cursive;
+    font-size: 10px;
+}
+
+.wrapper {
+    padding: 25px;
+}
+
+
+/* Header, first box */
+header {
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 35px;
+    background-color: rgba(230, 230, 230, .5);
+    border: 1px solid green;
+}
+
+header h1::first-letter {
+    color: green;
+    font-size: 3.5rem;
+}
+
+header div {
+    position: absolute;
+    background-color: green;
+    transform: rotate(45deg) translate(50%, 50%);
+    height: 12vh;
+    width: 12vh;
+    bottom: 0;
+    right: 0;
+}
+
+/* Section, second box */
+section.arrows {
+    overflow: hidden;
+    border: 1px solid green;
+    text-align: center;
+    background-color: rgba(230, 230, 230, .5);
+    font-size: 1.6rem;
+    padding: 35px;
+}
+
+/*Animation titles */
+section.arrows div.text h3 {
+    margin-top: 25px;
+}
+
+/* Animation squares and background */
+section.arrows div.text div.arrow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    width: 25vh;
+    height: 25vh;
+    border: 1px solid black;
+    margin: 10px auto;
+    background-color: rgb(230, 230, 230);
+    background-image: linear-gradient(#eee 2px, transparent 0), linear-gradient(90deg, #eee 2px, transparent 0);
+    background-size: 5vh 5vh;
+}
+
+/* Circle with animation font */
+section.arrows div.text div.fontStyle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50%;
+    width: 50%;
+    font-size: 3.2rem;
+    color: green;
+    background-color: #dce8d7;
+    border: 1px solid green;
+    border-radius: 50%;
+    transition: 1s;
+}
+
+/* button, adds hover view */
+section.arrows div.hover {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+section.arrows div.hover button.hoverView {
+    width: 90%;
+    text-transform: uppercase;
+    font-family: 'Comfortaa', cursive;
+    font-weight: bold;
+    padding: 20px 0;
+    margin: 20px 0;
+    color: green;
+    border: 1px solid green;
+    background-color: white;
+    font-size: 1.8rem;
+    transition: 1s;
+}
+
+section.arrows div.hover p {
+    padding-bottom: 15px;
+    border-bottom: 1px solid green;
+    font-size: 1.8rem;
+}
+
+/* Footer, section about the project, third box */
+footer.about {
+    overflow: hidden;
+    text-align: center;
+    font-size: 1.8rem;
+    padding: 30px;
+    border: 1px solid green;
+    background-color: rgba(230, 230, 230, .5);
+}
